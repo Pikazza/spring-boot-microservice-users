@@ -13,7 +13,8 @@ public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
     	LOGGER.info(UsersController.class.getName()+"  Registed");
-    	register(UsersController.class);
+    	register(UsersController.class); 
+    	register(HomeController.class);
     }
 
 }

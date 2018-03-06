@@ -26,6 +26,7 @@ public class UsersController {
 	@Autowired
 	private UsersService usersService;
 	
+	
 	@GET
 	@Path("/users")
 	@Consumes({MediaType.APPLICATION_JSON})

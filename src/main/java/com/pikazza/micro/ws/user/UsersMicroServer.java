@@ -10,12 +10,12 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class UsersMicroApplication {
+public class UsersMicroServer {
 	
 	public static final String ORDERS_SERVICE_URL = "http://PIKAZZA-ORDERS-MICROSERVICE";
 	
 	public static void main(String[] args) {
-		SpringApplication.run(UsersMicroApplication.class, args);
+		SpringApplication.run(UsersMicroServer.class, args);
 	}
 	
 	@Bean
