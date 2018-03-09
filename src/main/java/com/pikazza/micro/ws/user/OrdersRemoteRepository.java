@@ -21,8 +21,8 @@ public class OrdersRemoteRepository {
 				: "http://" + serviceUrl;
 	}
 	
-	public List<Orders> getAllOrders() {
-		String url = serviceUrl+"/v1.0/orders";
+	public List<Orders> getOrderByUserId(String id) {
+		String url = serviceUrl+"/v1.0/orderByCustomerId/"+id;
 		//List<Orders> orders
 		//ResponseEntity<List<Orders>> responseEntity= restTemplate.getForEntity(url, List<Orders>.class);
 		//return Arrays.asList(responseEntity.getBody());

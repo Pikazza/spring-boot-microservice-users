@@ -10,4 +10,8 @@ public interface UsersService {
 
 	List<Orders> getOrderByUserId(String id);
 
+	Users postUser(Users user);
+
+	Users putUser(Users user);
+
 }

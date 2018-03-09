@@ -3,6 +3,9 @@
 spring:
   application:
     name: pikazza-users-microservice
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/micro_users_db
 
 # Discovery Server Access
 eureka:
@@ -18,3 +21,4 @@ server:
 error:
   whitelabel:
     enabled: false
+    
